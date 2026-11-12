@@ -1,0 +1,18 @@
+{
+  "name": "strip-ai-metadata-monorepo",
+  "private": true,
+  "type": "module",
+  "description": "Source for the strip-ai-metadata library/CLI and the strip-ai-metadata-mcp server.",
+  "scripts": {
+    "build": "node packages/build.mjs",
+    "test": "esbuild scripts/test-raw.mjs --bundle --platform=node --format=esm --outfile=.cache/test-raw.mjs --log-level=warning && node .cache/test-raw.mjs"
+  },
+  "devDependencies": {
+    "@cantoo/pdf-lib": "^2.11.1",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "esbuild": "^0.25.0",
+    "exifr": "^7.1.3",
+    "zod": "^3.25.76"
+  },
+  "license": "MIT"
+}

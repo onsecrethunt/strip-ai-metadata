@@ -1,0 +1,53 @@
+{
+  "name": "strip-ai-metadata",
+  "version": "1.0.0",
+  "description": "Remove EXIF, GPS, C2PA Content Credentials, AI prompts and other hidden metadata from photos, videos, PDFs and camera RAW files. Lossless, local, no upload. Library + CLI.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "bin": {
+    "strip-ai-metadata": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@cantoo/pdf-lib": "^2.11.1"
+  },
+  "keywords": [
+    "exif",
+    "metadata",
+    "remove-metadata",
+    "strip-exif",
+    "gps",
+    "c2pa",
+    "content-credentials",
+    "ai-metadata",
+    "stable-diffusion",
+    "comfyui",
+    "privacy",
+    "raw",
+    "cr3",
+    "nef",
+    "dng",
+    "pdf-metadata",
+    "video-metadata",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onsecrethunt/strip-ai-metadata.git",
+    "directory": "packages/strip-ai-metadata"
+  },
+  "bugs": "https://github.com/onsecrethunt/strip-ai-metadata/issues",
+  "homepage": "https://www.stripaimetadata.com/mcp",
+  "author": "StripAIMetadata",
+  "license": "MIT"
+}

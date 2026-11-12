@@ -1,0 +1,49 @@
+{
+  "name": "strip-ai-metadata-mcp",
+  "version": "1.0.0",
+  "mcpName": "com.stripaimetadata/strip-ai-metadata",
+  "description": "Free, local MCP server for Claude, Cursor and VS Code: remove GPS, EXIF, C2PA, AI prompts and author data from photos, videos, PDFs and RAW files. No API key, nothing uploaded.",
+  "type": "module",
+  "bin": {
+    "strip-ai-metadata-mcp": "dist/server.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@cantoo/pdf-lib": "^2.11.1",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^3.25.76"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "vscode",
+    "exif",
+    "metadata",
+    "remove-metadata",
+    "c2pa",
+    "ai-metadata",
+    "privacy",
+    "gps",
+    "raw",
+    "pdf"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onsecrethunt/strip-ai-metadata.git",
+    "directory": "packages/strip-ai-metadata-mcp"
+  },
+  "bugs": "https://github.com/onsecrethunt/strip-ai-metadata/issues",
+  "homepage": "https://www.stripaimetadata.com/mcp",
+  "author": "StripAIMetadata",
+  "license": "MIT"
+}
