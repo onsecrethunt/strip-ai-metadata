@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "com.stripaimetadata/strip-ai-metadata",
   "title": "Strip AI Metadata",
-  "description": "Remove GPS, EXIF, C2PA, AI prompts and author data from photos, videos, PDFs and RAW files. Local, free, no upload.",
+  "description": "Remove GPS, EXIF, C2PA and AI prompts from photos, videos, PDFs and RAW files. Local, no upload.",
   "websiteUrl": "https://www.stripaimetadata.com/mcp",
   "version": "1.0.0",
   "packages": [
