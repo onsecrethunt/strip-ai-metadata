@@ -36,6 +36,12 @@ There are more setups (Claude Code, Cursor, VS Code) in the [MCP README](package
 | PDF | PDF | Author, title, software, dates, XMP, page metadata, EXIF inside embedded photos, old revisions |
 | RAW | CR2, CR3, NEF, ARW, DNG, RAF, RW2, ORF, PEF | GPS, body and lens serials, owner, copyright, dates, XMP, IPTC. Make, model and maker notes are kept so raw editors still read the file. |
 
+## Guides
+
+- [Remove EXIF data in Python without sideways photos (Pillow, tested)](https://www.stripaimetadata.com/blog/remove-exif-data-python-pillow)
+- [Remove EXIF data in Node.js: sharp vs exif-be-gone (tested)](https://www.stripaimetadata.com/blog/remove-exif-data-nodejs-sharp)
+- [Strip EXIF from images before upload in JavaScript (no library)](https://www.stripaimetadata.com/blog/strip-exif-before-upload-javascript)
+
 ## Layout
 
 ```
