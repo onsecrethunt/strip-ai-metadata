@@ -256,8 +256,8 @@ class Cleaner {
       case 0x927c: // Maker note
         if (kind === 'exif') this.makerNote(t, e, depth);
         return;
-      case 0xc634: // DNG private data: a copy of the original maker note
-        this.kept.add('DNG private data (the original maker note, which raw converters use for colour)');
+      case 0xc634: // DNGPrivateData / Sony SR2Private: maker data raw converters need
+        this.kept.add('Camera private data block (raw converters use it for colour)');
         return;
       case 0xc68c: // DNG original raw file data
         this.warnings.add('This DNG embeds the original raw file. Its metadata could not be cleaned; convert without "Embed original raw file" to remove it.');
@@ -305,7 +305,7 @@ class Cleaner {
       this.walk(t, at, 'canon', depth + 1);
       return;
     }
-    this.kept.add('Camera maker note (settings editors need to read the photo)');
+    this.kept.add(/^sony/i.test(this.make) ? 'Sony maker note (encrypted; raw converters need it, and it holds an internal serial number)' : 'Camera maker note (settings editors need to read the photo)');
   }
 
   canonTag(t: Tiff, e: Entry) {
