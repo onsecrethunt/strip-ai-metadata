@@ -1,5 +1,7 @@
 # strip-ai-metadata
 
+[![strip-ai-metadata MCP server](https://glama.ai/mcp/servers/onsecrethunt/strip-ai-metadata/badges/score.svg)](https://glama.ai/mcp/servers/onsecrethunt/strip-ai-metadata) [![npm](https://img.shields.io/npm/v/strip-ai-metadata-mcp)](https://www.npmjs.com/package/strip-ai-metadata-mcp)
+
 Remove hidden metadata from **photos, videos, PDFs and camera RAW files**: GPS location, camera and serial numbers, author names, dates, XMP/IPTC, **C2PA Content Credentials** and **AI prompts** (Stable Diffusion, ComfyUI, Midjourney, ChatGPT, Firefly).
 
 - **Lossless.** Metadata is cut out or blanked in place, so image pixels, video streams and RAW sensor data are untouched.
